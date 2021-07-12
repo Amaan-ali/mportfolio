@@ -1,0 +1,230 @@
+body{
+    margin: 0em;
+    align-items: center;
+}
+header{
+    background-color: #f8f8f8;
+    margin-bottom: 2em;
+}
+h2{
+    font: normal normal normal 24px/28px Lora;
+    margin-top: 0em;
+    color: #143774;
+}
+h3{
+    color:#1792d2;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.logo{
+    margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px dotted pink; */
+}
+.nav-title{
+    color:#143774;
+    font-family: 'Lora', serif;
+    margin: 0px;
+    
+}
+.nav-subtitle{
+    color:#1792d2;
+    margin: 0px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+/* .navbar{
+    /* border: 2px dashed brown; 
+} */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    padding: 0px 0px;
+    /* border: 2px solid red; */
+}
+nav li{
+    /* border: 2px solid yellow; */
+    margin: 0em .5em;
+    list-style: none;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+nav a{
+    
+    text-decoration: none;
+    color:#707070;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.current-page{
+    border-bottom: 2px solid #707070;
+}
+
+nav a:hover,nav a:focus{
+    color: #1792d2;
+}
+.current-page:hover{
+    color: #707070;
+}
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.article-featured{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+.article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
+}
+.article-title{
+    font: normal normal normal 24px/28px Lora;
+    margin-top: 0em;
+    /* letter-spacing: 4.8px; */
+    color: #143774;
+    order:1;
+}
+.article-image{
+    order:0;
+}
+.article-matter a{
+    color:#1792d2;
+}
+strong{
+    font-weight: 700;
+    color: #707070;
+}
+.article-matter{
+    font: normal normal 300 18px/28px Ubuntu;
+    order:1;
+}
+.article-info{
+    font: normal normal normal 14px/19px Segoe UI;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+    order:0;
+}
+.article-continue-reading{
+    font: normal normal bold 14px/28px Ubuntu;
+    color:#1792D2;
+    text-decoration: none;
+    letter-spacing: 2.8px;
+    text-transform:uppercase ;
+    order:1;
+}
+.article-continue-reading:hover,.article-continue-reading:focus{
+    color: #143774;
+    text-decoration: underline;
+}
+.widget-title {
+    color: #143774;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.widget-title,
+.widget-recent-post-title {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+.widget-recent-post-title {
+    color: #143774;
+}
+.widget-body{
+    color: #143774;
+}
+.sidebar-widget {
+    border: 20px solid #efefef;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+img{
+    display:block;
+    max-width: 100%;
+}
+.image-full{
+    width:100%;
+    height:450px;
+    object-fit: cover;
+}
+.footer-element{
+    color:white;
+    width: 100%;
+    background-color: #143774;
+    text-align: center;
+    text-transform: uppercase;
+}
+.footer-element p{
+    padding: 1em;
+    font: normal normal bold 18px/28px Ubuntu;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    /* opacity: 0.54; */
+    margin: 0em;
+}
+@media (min-width:815px) {
+    .container-flex{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul{
+        flex-direction: row;
+    }
+    main {
+        width: 70%;
+    }
+    
+    aside {
+        width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
+    }
+    .article-recent{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2em;
+        align-items: flex-start;
+    }
+    .article-recent-main{
+        width:68%;
+        margin-top: 0em;
+    }
+    .article-recent-secondary{
+        width:30%;
+    }
+    
+}
